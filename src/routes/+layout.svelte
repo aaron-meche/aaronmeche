@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Aaron Meche</title>
+	<title>Baileo - Home</title>
 	<script src="https://kit.fontawesome.com/5cf062dc93.js" crossorigin="anonymous"></script>
 </svelte:head>
 
