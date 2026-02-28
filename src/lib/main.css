@@ -38,39 +38,43 @@
     src: url('$lib/SansSerif/ExtraBlack.otf') format('opentype');
     font-weight: 900;
 }
+@font-face {
+    font-family: Baskerville;
+    src: url('$lib/Baskerville/Baskervville-VariableFont_wght.ttf') format('truetype');
+}
 
 :root{
-	--hue: 260;
-	--sat: 8%;
-	--strt: 6%;
-	--diff: 4%;
+	--hue: 280;
+	--sat: 16%;
+	--strt: 90%;
+	--diff: -6%; 
 
 	--accent: hsl(var(--hue), 48%, 64%);
 	--accent-transparent: hsl(var(--hue), 48%, 48%, 40%);
     --true-accent: hsl(255, 89%, 64%);
-	--contrast: hsl(var(--hue), 0%, 92%);
+	--contrast: hsl(var(--hue), 0%, calc(100% - var(--strt)));
 	--contrast-transparent: hsl(var(--hue), 0%, 92%, 40%);
 	--bg: hsl(var(--hue), var(--sat), calc(var(--strt) + (0 * var(--diff))));
 	--bg-transparent: hsl(var(--hue), var(--sat), calc(var(--strt) + (0 * var(--diff))), 40%);
+	--l05: hsl(var(--hue), var(--sat), calc(var(--strt) + (0.5 * var(--diff))));
 	--l1: hsl(var(--hue), var(--sat), calc(var(--strt) + (1 * var(--diff))));
 	--l2: hsl(var(--hue), var(--sat), calc(var(--strt) + (2 * var(--diff))));
 	--l3: hsl(var(--hue), var(--sat), calc(var(--strt) + (3 * var(--diff))));
 	--l4: hsl(var(--hue), var(--sat), calc(var(--strt) + (4 * var(--diff))));
 	--l5: hsl(var(--hue), var(--sat), calc(var(--strt) + (5 * var(--diff))));
 	--l6: hsl(var(--hue), var(--sat), calc(var(--strt) + (6 * var(--diff))));
-    --alert: hsl(0, 70%, 58%);
+    --green: hsl(120, 40%, 80%);
+    --red: hsl(0, 40%, 80%);
 
 	--inline-moat: 15vw;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root{
-		--strt: 94%;
-		--diff: -6%;
-        --accent: hsl(var(--hue), 48%, 48%);
-		--contrast: hsl(var(--hue), 0%, 8%);
-        --contrast-transparent: hsl(var(--hue), 0%, 8%, 40%);
-        --alert: hsl(0, 83%, 49%);
+		--strt: 8%;
+		--diff: 6%;
+        --green: hsl(120, 40%, 20%);
+        --red: hsl(0, 40%, 20%);
 	}
 }
 
@@ -85,7 +89,7 @@ body{
     margin: 0;
     background: var(--bg);
     font-size: 1rem;
-    font-family: BaileyScript !important;
+    font-family: Baskerville;
     color: var(--contrast);
     overflow: hidden;
 }

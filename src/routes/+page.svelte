@@ -6,7 +6,7 @@
 <!--  -->
 
 <div class="page">
-    This is the main page.
+    Aaron Meche
 </div>
 
 <!--  -->

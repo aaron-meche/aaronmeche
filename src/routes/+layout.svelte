@@ -1,5 +1,6 @@
 <script>
 	import '$lib/main.css';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import favicon from '$lib/assets/icon.png';
 	import { resolve } from '$app/paths';
 	import { db } from '$lib/data'
@@ -13,10 +14,17 @@
 	<script src="https://kit.fontawesome.com/5cf062dc93.js" crossorigin="anonymous"></script>
 </svelte:head>
 
+<div class="navbar">
+	<Navbar />
+</div>
+
 <div class="page">
 	{@render children()}
 </div>
 
 <style>
-	
+	.navbar{
+		position: sticky;
+		top: 0;
+	}
 </style>
