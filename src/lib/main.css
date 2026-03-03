@@ -44,10 +44,10 @@
 }
 
 :root{
-	--hue: 280;
-	--sat: 16%;
-	--strt: 90%;
-	--diff: -6%; 
+	--hue: 240;
+	--sat: 0%;
+	--strt: 100%;
+	--diff: -5%; 
 
 	--accent: hsl(var(--hue), 48%, 64%);
 	--accent-transparent: hsl(var(--hue), 48%, 48%, 40%);
@@ -71,8 +71,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root{
-		--strt: 8%;
-		--diff: 6%;
+		--strt: 0%;
+		--diff: 5%;
         --green: hsl(120, 40%, 20%);
         --red: hsl(0, 40%, 20%);
 	}
@@ -89,7 +89,7 @@ body{
     margin: 0;
     background: var(--bg);
     font-size: 1rem;
-    font-family: Baskerville;
+    font-family: BaileyScript;
     color: var(--contrast);
     overflow: hidden;
 }

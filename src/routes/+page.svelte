@@ -1,19 +1,17 @@
 <!-- created by Aaron Meche -->
 <script>
-    
+    import Map from "$lib/components/Map.svelte";
+
 </script>
 
 <!--  -->
 
-<div class="page">
-    Aaron Meche
+<div class="map">
+    <Map />
 </div>
 
 <!--  -->
 
 <style>
-    .page{
-        padding: 2rem;
-    }
 
 </style>
