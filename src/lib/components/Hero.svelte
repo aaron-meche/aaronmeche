@@ -16,7 +16,7 @@
                 <i class="fa-brands fa-linkedin"></i>
                 LinkedIn
             </a>
-            <a class="btn btn-ghost" href="mailto:aameche18@gmail.com">
+            <a class="btn btn-ghost" href="mailto:aaron_meche@icloud.com">
                 <i class="fa-solid fa-envelope"></i>
                 Email
             </a>

@@ -1,13 +1,10 @@
 import { writable } from 'svelte/store'
 
 let initial_db = {
-    accessToken: null,
-    itemId: null,
-    accounts: null,
-    transactions: null
+    
 }
 
-const app_title = "finance.2.4.26-5"
+const app_title = "aaronmeche_0.0.1"
 const storage_ref = `localDB-${app_title}`
 
 const storage = {

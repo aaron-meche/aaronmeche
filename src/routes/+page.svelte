@@ -5,7 +5,13 @@
     import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Hero />
-<ProjectsSection />
-<EducationSection />
-<Footer />
+<!--  -->
+
+<div class="page">
+    <Hero />
+    <ProjectsSection />
+    <EducationSection />
+    <Footer />
+</div>
+
+<!--  -->
