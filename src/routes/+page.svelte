@@ -1,17 +1,11 @@
-<!-- created by Aaron Meche -->
 <script>
-    import Map from "$lib/components/Map.svelte";
-
+    import Hero from '$lib/components/Hero.svelte';
+    import ProjectsSection from '$lib/components/ProjectsSection.svelte';
+    import EducationSection from '$lib/components/EducationSection.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<!--  -->
-
-<div class="map">
-    <Map />
-</div>
-
-<!--  -->
-
-<style>
-
-</style>
+<Hero />
+<ProjectsSection />
+<EducationSection />
+<Footer />

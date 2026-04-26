@@ -38,16 +38,12 @@
     src: url('$lib/SansSerif/ExtraBlack.otf') format('opentype');
     font-weight: 900;
 }
-@font-face {
-    font-family: Baskerville;
-    src: url('$lib/Baskerville/Baskervville-VariableFont_wght.ttf') format('truetype');
-}
 
 :root{
 	--hue: 240;
 	--sat: 0%;
 	--strt: 100%;
-	--diff: -5%; 
+	--diff: -5%;
 
 	--accent: hsl(var(--hue), 48%, 64%);
 	--accent-transparent: hsl(var(--hue), 48%, 48%, 40%);
@@ -55,7 +51,7 @@
 	--contrast: hsl(var(--hue), 0%, calc(100% - var(--strt)));
 	--contrast-transparent: hsl(var(--hue), 0%, 92%, 40%);
 	--bg: hsl(var(--hue), var(--sat), calc(var(--strt) + (0 * var(--diff))));
-	--bg-transparent: hsl(var(--hue), var(--sat), calc(var(--strt) + (0 * var(--diff))), 40%);
+	--bg-transparent: hsl(var(--hue), var(--sat), calc(var(--strt) + (0 * var(--diff))), 60%);
 	--l05: hsl(var(--hue), var(--sat), calc(var(--strt) + (0.5 * var(--diff))));
 	--l1: hsl(var(--hue), var(--sat), calc(var(--strt) + (1 * var(--diff))));
 	--l2: hsl(var(--hue), var(--sat), calc(var(--strt) + (2 * var(--diff))));
@@ -67,6 +63,7 @@
     --red: hsl(0, 40%, 80%);
 
 	--inline-moat: 15vw;
+	--navbar-height: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,17 +81,34 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     background: var(--bg);
     font-size: 1rem;
     font-family: BaileyScript;
     color: var(--contrast);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-a,button,input{
+a, button, input {
     all: unset;
-    display: block;
+    cursor: pointer;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.4;
+    margin: 0 0 2rem 0;
+}
+
+.section-inner {
+    width: 100%;
 }

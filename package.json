@@ -19,6 +19,7 @@
 	},
 	"dependencies": {
 		"@googlemaps/js-api-loader": "^2.0.2",
-		"@sveltejs/adapter-static": "^3.0.10"
+		"@sveltejs/adapter-static": "^3.0.10",
+		"remove": "^0.1.5"
 	}
 }
