@@ -1,6 +1,6 @@
 <nav class="navbar">
     <a class="brand" href="#hero">
-        <img src="/pfp.png" alt="Aaron Meche" class="pfp" />
+        <img src="/small-pfp.png" alt="Aaron Meche" class="pfp" />
         <span>Aaron Meche</span>
     </a>
     <div class="nav-links">
