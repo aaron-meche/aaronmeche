@@ -1,7 +1,7 @@
 <script>
 	import '$lib/main.css';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import favicon from '$lib/assets/icon.png';
+	import favicon from '$lib/assets/favicon.ico';
 	let { children } = $props();
 </script>
 
